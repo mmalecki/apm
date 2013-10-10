@@ -1,0 +1,10 @@
+{
+  "name": "apm",
+  "version": "0.0.0",
+  "author": "Maciej Małecki <me@mmalecki.com>",
+  "main": "./lib/apm.js",
+  "dependencies": {
+    "nano": "4.1.x",
+    "tap": "0.4.x"
+  }
+}

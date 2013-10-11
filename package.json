@@ -5,6 +5,11 @@
   "main": "./lib/apm.js",
   "dependencies": {
     "nano": "4.1.x",
-    "tap": "0.4.x"
+    "tap": "0.4.x",
+    "semver": "2.1.x",
+    "async": "0.2.x",
+    "node-uuid": "1.4.x",
+    "levelup": "0.17.x",
+    "leveldown": "0.9.x"
   }
 }

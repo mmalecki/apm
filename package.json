@@ -11,9 +11,13 @@
     "node-uuid": "1.4.x",
     "levelup": "0.17.x",
     "leveldown": "0.9.x",
-    "npmlog": "0.0.x"
+    "npmlog": "0.0.x",
+    "rimraf": "2.2.x"
   },
   "bin": {
     "apm": "./bin/apm"
+  },
+  "links": {
+    "bin/apm": "./bin/apm"
   }
 }

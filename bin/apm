@@ -1,14 +1,19 @@
 #!/usr/bin/env node
 var APM = require('../'),
     rc = require('rc'),
+    npmlog = require('npmlog'),
     apm;
 
 var config = rc('apm', {
   prefix: process.env.HOME || process.env.USERPROFILE
 });
 
+npmlog.level = config.loglevel || 'verbose';
+
 apm = new APM(config);
 
 if (process.argv[2] === 'install' && process.argv[3]) {
-  apm.install(process.argv[3]);
+  apm.install(process.argv[3], function (err) {
+    npmlog.error('install', err);
+  });
 }

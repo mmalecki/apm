@@ -17,3 +17,8 @@ if (process.argv[2] === 'install' && process.argv[3]) {
     npmlog.error('install', err);
   });
 }
+else if (process.argv[2] === 'link' && process.argv[3]) {
+  apm.link(process.argv[3], function (err) {
+    npmlog.error('link', err);
+  });
+}
